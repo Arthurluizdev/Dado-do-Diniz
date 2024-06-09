@@ -8,21 +8,23 @@
 </head>
 <body>
     <h1>Lançamento de Dados</h1>
-    <label for="dice">Escolha um dado:</label>
-    <select id="dice">
-        <option value="2">D2</option>
-        <option value="3">D3</option>
-        <option value="4">D4</option>
-        <option value="6">D6</option>
-        <option value="8">D8</option>
-        <option value="10">D10</option>
-        <option value="20">D20</option>
-        <option value="30">D30</option>
-        <option value="50">D50</option>
-        <option value="100">D100</option>
-    </select>
-    <button onclick="rollDice()">Lançar</button>
-    <div id="result">Resultado: </div>
+    <div class="controls">
+        <label for="dice">Escolha um dado:</label>
+        <select id="dice">
+            <option value="2">D2</option>
+            <option value="3">D3</option>
+            <option value="4">D4</option>
+            <option value="6">D6</option>
+            <option value="8">D8</option>
+            <option value="10">D10</option>
+            <option value="20">D20</option>
+            <option value="30">D30</option>
+            <option value="50">D50</option>
+            <option value="100">D100</option>
+        </select>
+        <button onclick="rollDice()">Lançar</button>
+    </div>
+    <div id="diceResult" class="dice-display"></div>
     <script src="script.js"></script>
 </body>
 </html>

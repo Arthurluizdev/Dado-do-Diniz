@@ -2,19 +2,51 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 50px;
+  background-color: black;
 }
 
 h1 {
-  color: #333;
+  color: pink;
 }
 
-label, select, button, div {
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls label, .controls select, .controls button {
   font-size: 1.2em;
-  margin: 10px;
+  margin: 0 10px;
+  background-color: pink;
 }
 
-#result {
+.dice-display {
+  display: inline-block;
   margin-top: 20px;
-  font-size: 1.5em;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border: 2px solid pink;
+  border-radius: 15px;
+  font-size: 4em;
   font-weight: bold;
+  background-color: white;
+  text-align: center; 
+  vertical-align: middle; 
+  position: relative; 
+}
+
+.dice-display::before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle; 
+}
+
+.dice-display span {
+  display: inline-block;
+  vertical-align: middle; 
+  line-height: normal; 
 }
