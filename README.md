@@ -1,1 +1,1 @@
-Dado
+Dados
